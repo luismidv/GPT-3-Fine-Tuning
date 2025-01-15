@@ -1,0 +1,6 @@
+#SCRIPT TO PREPARE DATASET FOR A CHATBOT AI
+dataset = "./dialogs.txt"
+
+with open('./dialogs.txt') as f:
+    data = f.readlines()
+    print(data)
