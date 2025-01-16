@@ -1,0 +1,32 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "3.11.4",
+  "startedAt":  "2025-01-16T21:22:02.023654Z",
+  "program":  "c:\\Users\\luism\\OneDrive\\Escritorio\\DesktopML\\GPTFineTune\\GPTFineTune\\dataprepare.py",
+  "codePath":  "dataprepare.py",
+  "git":  {
+    "remote":  "https://huggingface.co/spaces/luismidv/GPTFineTune",
+    "commit":  "7147339c05f2601bd3f43ffbc9172fb2e1f908d5"
+  },
+  "email":  "perezmartluismiguel@gmail.com",
+  "root":  "C:\\Users\\luism\\OneDrive\\Escritorio\\DesktopML\\GPTFineTune\\GPTFineTune",
+  "host":  "Luismi",
+  "username":  "luism",
+  "executable":  "c:\\Users\\luism\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "codePathLocal":  "dataprepare.py",
+  "cpu_count":  14,
+  "cpu_count_logical":  20,
+  "disk":  {
+    "/":  {
+      "total":  "499228078080",
+      "used":  "428243386368"
+    }
+  },
+  "memory":  {
+    "total":  "16984236032"
+  },
+  "cpu":  {
+    "count":  14,
+    "countLogical":  20
+  }
+}

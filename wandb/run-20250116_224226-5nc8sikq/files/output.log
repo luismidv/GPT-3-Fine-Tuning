@@ -1,0 +1,30 @@
+  0%|                                                                                                                                                       | 0/3 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "c:\Users\luism\OneDrive\Escritorio\DesktopML\GPTFineTune\GPTFineTune\dataprepare.py", line 44, in <module>
+    trainer.train()
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\trainer.py", line 2171, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\trainer.py", line 2480, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\trainer.py", line 5156, in get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\accelerate\data_loader.py", line 552, in __iter__
+    current_batch = next(dataloader_iter)
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "c:\Users\luism\AppData\Local\Programs\Python\Python311\Lib\site-packages\datasets\dataset_dict.py", line 78, in __getitem__
+    raise KeyError(
+KeyError: "Invalid key: 0. Please first select a split. For example: `my_dataset_dictionary['train'][0]`. Available splits: ['test', 'train', 'validation']"
