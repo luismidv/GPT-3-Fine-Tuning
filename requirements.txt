@@ -5,3 +5,5 @@ evaluate
 tf-keras
 accelerate
 torch
+scikit-learn
+numpy
